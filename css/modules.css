@@ -1,63 +1,189 @@
-@media (min-width:768px) and (max-width:960px) {
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    #content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #sectionCAndD {
+        display: flex;
+        width: 100%;
+        border-bottom: none;
+        border-top: none;
+    }
+    #sectionEFGH {
+        border: none;
+        display: flex;
+        width: 100%;
+    }
     aside {
-        background-color: #eee;
+        background-color: green;
         border: 1px solid;
         text-align: center;
-        float: left;
         /* width: 200px; */
-        width: 20%;
+        width: 30%;
         height: 600px;
+        border-right: none;
     }
     #divC {
-        float: left;
         /* width: 380px; */
-        width: 40%;
+        width: 50%;
         height: 200px;
+        border-bottom: none;
+        border-top: none;
     }
     #divD {
-        float: left;
         /* width: 380px; */
-        width: 40%;
+        width: 50%;
         height: 200px;
+        border-bottom: none;
+        border-top: none;
+    }
+    #divEF {
+        display: flex;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+    }
+    #divGH {
+        display: flex;
+        width: 100%;
+        border-left: none;
     }
     .efgh {
-        float: left;
+        border-bottom: none;
+        border-top: none;
         /* width: 190px; */
-        width: 20%;
+        width: 55%;
         height: 250px;
+    }
+    #i {
+        border-bottom: none;
+        border-top: none;
+        width: 100%;
+        height: 140px;
     }
 }
 
-@media (min-width:480px) and (max-width:767px) {
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
     aside {
-        background-color: #eee;
         border: 1px solid;
         text-align: center;
         height: 150px;
+        border-top: none;
+        border-bottom: none;
+    }
+    #sectionEFGH {
+        width: 100%;
+    }
+    #divEF {
+        display: flex;
+        width: 100%;
+        border: none;
+    }
+    #divGH {
+        display: flex;
+        width: 100%;
+        border: none;
     }
     #divC {
+        border-top: none;
+        border-bottom: none;
         height: 125px;
     }
     #divD {
         height: 125px;
+        border-bottom: none;
     }
     .efgh {
         width: 50%;
         height: 250px;
     }
-    #e {
-        float: left;
+    #i {
+        border-bottom: none;
+        border-top: none;
+        width: 100%;
+        height: 80px;
     }
-    #g {
-        float: left;
+}
+
+
+/* ##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
-    #f {
-        float: right;
+    #sectionCAndD {
+        display: flex;
+        width: 100%;
+        border-bottom: none;
+        border-top: none;
     }
-    #h {
-        float: right;
+    #sectionEFGH {
+        border: none;
+        display: flex;
+        width: 100%;
     }
-    .clear {
-        clear: both;
+    aside {
+        background-color: green;
+        border: 1px solid;
+        text-align: center;
+        /* width: 200px; */
+        width: 30%;
+        height: 600px;
+        border-right: none;
+    }
+    #divC {
+        /* width: 380px; */
+        width: 50%;
+        height: 200px;
+        border-bottom: none;
+        border-top: none;
+    }
+    #divD {
+        /* width: 380px; */
+        width: 50%;
+        height: 200px;
+        border-bottom: none;
+        border-top: none;
+    }
+    #divEF {
+        display: flex;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+    }
+    #divGH {
+        display: flex;
+        width: 100%;
+        border-left: none;
+    }
+    .efgh {
+        border-bottom: none;
+        border-top: none;
+        /* width: 190px; */
+        width: 55%;
+        height: 250px;
+    }
+    #i {
+        border-bottom: none;
+        border-top: none;
+        width: 100%;
+        height: 140px;
     }
 }
